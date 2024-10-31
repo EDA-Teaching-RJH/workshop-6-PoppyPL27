@@ -4,9 +4,9 @@ def main():
     print(safe_divide(20,5))
     print(safe_divide(7,0))
     print(str(process_list([5,'r', 0, 34])))
-    print(nested_operations("7","5"))
-    print(nested_operations("b","5"))
-    print(nested_operations("7","0"))
+    print(nested_operations(7,5))
+    print(nested_operations('b',5))
+    print(nested_operations(7,0))
     process_input()
 
 def safe_divide(a, b):
@@ -56,7 +56,7 @@ def nested_operations(a, b):
         try:
             division = numberOne/numberTwo
             root = math.sqrt(division)
-            return "the square root of the division of "+a+ " and "+b+" is "+ str(root)
+            return "the square root of the division of "+str(a)+ " and "+str(b)+" is "+ str(root)
         except ZeroDivisionError:
             return "you cant divide by 0"
     except ValueError:
