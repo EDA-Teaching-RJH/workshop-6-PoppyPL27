@@ -1,5 +1,3 @@
-#Your code goes here. 
-
 import math
 
 def main():
@@ -82,7 +80,5 @@ def process_input():
         print("your result is "+str(Input))
     finally:
         print("processing complete")
-
-
 
 main()
